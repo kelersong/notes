@@ -1,0 +1,23 @@
+less-7
+单引号报错
+逐个添加括号 直到回显正常 发现为双括号型
+使用报错注入发现报错信息被隐藏，只有一句 you have an error
+所以需要换一个思路
+
+导出文件注入
+首先需要判断一下mysql有没有读写的性质 
+and (select count(*) from mysql.user) > 0 如果不报错 说明有读写文件的权限
+
+如果报错
+需要修改mysql中配置文件 mysql.ini 
+添加语句
+secure_file_priv = 
+后面为空 默认拥有读和写的权限
+
+然后就可以将信息写入指定文件中
+比如 ： union select 1,database(),3 into outfile "文件路径"
+
+进一步 如果直到当前网页的绝对地址，那么可以利用webshell工具添加后门 
+
+结束less-7
+

@@ -1,0 +1,11 @@
+stegsolve 主要有五个模块
+File Format : 主要是查看一些图片的具体信息
+Data Extract：数据提取 
+相关题目 LSB隐写：
+LSB 即 least significant bit 即最低有效位
+图片中的图像像素一般是由RGB三原色组成，每一种颜色占八位。
+LSB隐写就是修改RGB颜色的最低二进制位
+
+Frame Browser 帧浏览器 主要对GIF之类的动图进行分解，动图变成一张张图片
+
+Image Combiner 拼图，图片拼接

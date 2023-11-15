@@ -1,0 +1,1 @@
+Stegdetect程序主要用于分析JPEG文件，用Stegdcetect可以检测到通过JSteg JPHide OutGuass Invisible F5 apppendX Camouflage 等这些隐写工具隐藏的信息。 
